@@ -13,11 +13,12 @@ import java.util.Map;
  */
 public class LanguageCodeConverter {
 
-    private HashMap<String,String> languages;
+    private Map<String, String> languages;
     /**
      * Default constructor which will load the language codes from "language-codes.txt"
      * in the resources folder.
      */
+
     public LanguageCodeConverter() {
         this("language-codes.txt");
     }

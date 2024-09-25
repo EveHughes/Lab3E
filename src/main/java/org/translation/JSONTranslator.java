@@ -1,5 +1,8 @@
 package org.translation;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
@@ -9,16 +12,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
 /**
  * An implementation of the Translator interface which reads in the translation
  * data from a JSON file. The data is read in once each time an instance of this class is constructed.
  */
 public class JSONTranslator implements Translator {
 
-    private HashMap<String, Integer> map;
+    private Map<String, Integer> map;
     private final JSONArray jsonArray;
 
     /**

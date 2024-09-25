@@ -1,12 +1,12 @@
 package org.translation;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
 
 /**
  * A minimal example of reading and using the JSON data from resources/sample.json.

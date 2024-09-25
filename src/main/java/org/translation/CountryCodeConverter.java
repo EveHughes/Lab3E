@@ -13,11 +13,12 @@ import java.util.Map;
  */
 public class CountryCodeConverter {
 
-    private HashMap<String, String> countryCodes;
+    private Map<String, String> countryCodes;
     /**
      * Default constructor which will load the country codes from "country-codes.txt"
      * in the resources folder.
      */
+
     public CountryCodeConverter() {
         this("country-codes.txt");
     }
